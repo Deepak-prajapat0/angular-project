@@ -1,0 +1,15 @@
+nav ul li{
+    width: 6rem;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+nav ul li:hover{
+   color: rgb(79, 38, 154);
+}
+header .nav-btn button{
+    width: 4rem;
+    padding: 2px 3px;
+    border: 1px solid;
+}
