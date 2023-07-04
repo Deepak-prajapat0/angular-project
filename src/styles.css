@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --primary-color:#7E3AF2;
+    --primary-color-hover:#6421d9
+}
+body,html{
+    min-width: 100vw;
+    overflow-x: hidden;
+    user-select: none;
+}

@@ -1,0 +1,17 @@
+<footer class="p-2">
+  <div class="p-4 flex flex-row justify-around flex-wrap gap-4">
+    <div *ngFor="let link of links" class="p-4 flex flex-col gap-2" >
+      <span class="py-4 text-md font-medium">{{ link.name | uppercase }}</span>
+      <ul *ngFor="let item of link.links">
+        <li class="text-gray-500 cursor-pointer">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+  <hr> 
+  <div class="p-6 flex flex-row justify-center items-center gap-14">
+    <h6>
+        copyright@ 2023 
+    </h6>
+   <span> Follow on : <a href="https://github.com/Deepak-prajapat0" target="_blank"><i class="fa-brands fa-github text-xl"></i> </a></span>
+  </div>
+</footer>

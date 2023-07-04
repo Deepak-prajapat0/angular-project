@@ -1,15 +1,33 @@
-<header class="px-6 h-14 flex flex-row justify-between items-center bg-slate-300">
+<header class="px-6 h-14 w-screen fixed flex flex-row justify-between items-center bg-white">
     <span>Logo</span>
     <nav>
-        <ul class="p-2 flex flex-row gap-6">
+        <ul class="p-2 flex flex-row gap-6 max-lg:hidden">
             <li>Home</li>
             <li>Company</li>
+            <li>Features</li>
             <li>About</li>
             <li>Contact-Us</li>
         </ul>
     </nav>
-    <div class="nav-btn w-max flex flex-row gap-4">
+    <div class="nav-btn w-max flex flex-row gap-2">
         <button>Login</button>
-        <button>Signup</button>
+        <button class="max-sm:hidden text-white font-bold rounded-md bg-[--primary-color] hover:bg-[--primary-color-hover] ">Get started</button>
+        <button class="hidden max-lg:block" (click)="onClick()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <!-- link on small screen -->
+    <div
+    [class.translate-y-0] ="isOpen"
+    [class.-translate-y-full]="!isOpen"
+     class="hidden max-lg:block p-4 w-screen h-max absolute top-0 right-0 bg-white/40 backdrop-blur-lg transition-transform ease-linear">
+        <button class="px-4 text-2xl float-right" (click)="onClick()"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="p-2 py-6 flex flex-col gap-6">
+            <li>Home</li>
+            <li>Company</li>
+            <li>Features</li>
+            <li>About</li>
+            <li>Contact-Us</li>
+        </ul>
+        <button class="p-2 text-white font-bold rounded-md bg-[--primary-color] hover:bg-[--primary-color-hover] ">Get started</button>
     </div>
 </header>

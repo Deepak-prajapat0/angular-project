@@ -9,7 +9,7 @@ nav ul li:hover{
    color: rgb(79, 38, 154);
 }
 header .nav-btn button{
-    width: 4rem;
-    padding: 2px 3px;
-    border: 1px solid;
+    font-size: 14px;
+    width: fit-content;
+    padding: 8px 16px;
 }
